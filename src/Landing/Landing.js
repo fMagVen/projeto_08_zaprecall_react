@@ -4,7 +4,7 @@ import Button from '../Button'
 
 export default function Landing(){
     return(
-        <div className="Landing flex">
+        <div className="Landing flex hidden">
             <img className='LL' src={LogoL} alt="zap recall logo large" />
             <input type="text" placeholder='Sua meta de zaps' />
             <Button>Praticar HTML e CSS</Button>

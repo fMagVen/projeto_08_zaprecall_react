@@ -3,6 +3,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.hidden
+{
+    display: none !important;
+}
 
 .flex
 {
@@ -19,9 +23,34 @@
 {
     font-weight: 700;
 }
+.weight-400
+{
+    font-weight: 400;
+}
+.size-28
+{
+    font-size: 28px;
+}
 .size-20
 {
     font-size: 20px;
+}
+.size-18
+{
+    font-size: 18px;
+}
+
+.LogoS
+{
+    width: 100%;
+    margin-bottom: 144px;
+}
+
+.LogoS img
+{
+    width: 141px;
+    height: 54px;
+    margin: 26px 0 0 26px;
 }
 
 .button

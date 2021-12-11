@@ -1,0 +1,32 @@
+.flex-column
+{
+    flex-direction: column;
+}
+
+.CardPage
+{
+    align-items: center;
+    width: 100%;
+}
+
+.Card
+{
+    width: 392px;
+    height: 576px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+}
+
+.number
+{
+    margin: 13px 0 0 352px;
+}
+
+.turn img
+{
+    width: 49px;
+    height: 49px;
+    margin-left: 331px;
+}
