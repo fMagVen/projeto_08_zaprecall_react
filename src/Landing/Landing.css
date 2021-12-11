@@ -1,0 +1,33 @@
+.Landing
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.LL
+{
+    width: 218px;
+    height: 279px;
+    margin-top: 234px;
+}
+
+input
+{
+    margin-top: 130px;
+    width: 325px;
+    height: 49px;
+    padding-left: 16px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+}
+
+.Landing button
+{
+    margin-top: 20px;
+    width: 345px;
+}
+
+.Landing button:last-child
+{
+    margin-bottom: 50px;
+}
