@@ -3,25 +3,77 @@
     flex-direction: column;
 }
 
-.CardPage
+.cardPage
 {
     align-items: center;
     width: 100%;
 }
 
-.Card
+.page-title
+{
+    margin-bottom: 144px;
+}
+
+.card
 {
     width: 392px;
     height: 576px;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
+    position: relative;
 }
 
-.number
+
+
+.side
 {
-    margin: 13px 0 0 352px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+.front-turn
+{
+    transform: rotateY(-180deg);
+}
+.back
+{
+    transform: rotateY(180deg);
+}
+.back-turn
+{
+    transform: rotateY(0deg);
+}
+
+
+.number-front
+{
+    margin: 13px 0 0 345px;
+}
+
+.back-top
+{
+    margin-top: 20px;
+}
+
+.card-title
+{
+    margin-left: 160px;
+}
+.number-back
+{
+    margin-left: 115px;
+}
+
+.answer
+{
+    margin: 0 50px 0;
 }
 
 .turn img
@@ -29,4 +81,37 @@
     width: 49px;
     height: 49px;
     margin-left: 331px;
+}
+
+.remember-time
+{
+    width: 320px;
+    height: 48px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.remember-button
+{
+    width: 65px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.just-learned
+{
+    border: 3px solid #000000;
+}
+.no-recall
+{
+    border: 3px solid #F74848;
+}
+.recall-effort
+{
+    border: 3px solid #62DB38;
+}
+.zap
+{
+    border: 3px solid #FFEF61;
 }

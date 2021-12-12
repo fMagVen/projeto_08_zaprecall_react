@@ -1,6 +1,6 @@
 import FFlogo from './img/FFlogo.png'
 
-export default function(props){
+export default function Button(props){
     return(
         <button className='button weight-700 size-20 flex center'>
             {props.children}
