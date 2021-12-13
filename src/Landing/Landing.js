@@ -1,17 +1,29 @@
 import LogoL from '../img/LogoL.png'
 import './Landing.css'
-import Button from '../Button'
+import FFlogo from '../img/FFlogo.png'
 
-export default function Landing()
+export default function Landing(props)
 {
     return(
-        <div className="Landing flex hidden">
+        <div className={`Landing flex ${props.advancePage === 1 ? '' : 'hidden'}`}>
             <img className='LL' src={LogoL} alt="zap recall logo large" />
             <input type="text" placeholder='Sua meta de zaps' />
-            <Button>Praticar HTML</Button>
-            <Button>Praticar CSS</Button>
-            <Button >Praticar JS</Button>
-            <Button>Praticar React</Button>
+            <button className='button weight-700 size-20 flex center' onClick={() => props.setAdvancePage(2)}>
+                Praticar React
+                <img src={FFlogo} alt="fast forward logo" />
+            </button>
+            <button className='button weight-700 size-20 flex center' onClick={() => props.setAdvancePage(3)}>
+                Praticar HTML
+                <img src={FFlogo} alt="fast forward logo" />
+            </button>
+            <button className='button weight-700 size-20 flex center' onClick={() => props.setAdvancePage(4)}>
+                Praticar CSS
+                <img src={FFlogo} alt="fast forward logo" />
+            </button>
+            <button className='button weight-700 size-20 flex center' onClick={() => props.setAdvancePage(5)}>
+                Praticar JS
+                <img src={FFlogo} alt="fast forward logo" />
+            </button>
         </div>
     );
 }

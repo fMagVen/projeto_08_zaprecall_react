@@ -87,7 +87,8 @@ function App(){
             setZaps={setZaps}
             card={card}
             setCard={setCard}
-            forgot={setForgot}
+            forgot={forgot}
+            setForgot={setForgot}
             advancePage={advancePage}
             setAdvancePage={setAdvancePage}/>
         </>

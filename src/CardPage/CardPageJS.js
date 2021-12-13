@@ -32,7 +32,7 @@ export default function CardPage(props)
             props.setCard(props.card + 1);
             if(props.number === props.total)
             {
-                props.setAdvancePage(props.advancePage + 1)
+                props.setAdvancePage(6)
                 setFrontShow(1);
                 setColorScore('');
                 setFirstTime(1);
@@ -42,7 +42,7 @@ export default function CardPage(props)
 
     return(
         <>
-        <div className={`cardPage flex flex-column ${props.card === props.number && props.advancePage === 5 ? '' : 'hidden'}`}>
+        <div className={`cardPage js flex flex-column ${props.card === props.number && props.advancePage === 5 ? '' : 'hidden'}`}>
             <LogoS />
             <div className="page-title weight-700 size-28">React</div>
             <div className={`card ${colorScore}`}>
