@@ -8,8 +8,9 @@ export default function Landing()
         <div className="Landing flex hidden">
             <img className='LL' src={LogoL} alt="zap recall logo large" />
             <input type="text" placeholder='Sua meta de zaps' />
-            <Button>Praticar HTML e CSS</Button>
-            <Button>Praticar JS</Button>
+            <Button>Praticar HTML</Button>
+            <Button>Praticar CSS</Button>
+            <Button >Praticar JS</Button>
             <Button>Praticar React</Button>
         </div>
     );

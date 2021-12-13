@@ -11,7 +11,7 @@
 
 .page-title
 {
-    margin-bottom: 144px;
+    margin-bottom: 104px;
 }
 
 .card
@@ -19,6 +19,7 @@
     width: 392px;
     height: 576px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 
