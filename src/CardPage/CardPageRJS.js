@@ -45,7 +45,7 @@ export default function CardPage(props)
                 <div className={`side flex flex-column ${frontShow === 1 ? 'front' : 'front-turn'}`}>
                     <div className="number-front weight-400 size-18">{props.number}/{props.total}</div>
                     <div className="question weight-700 size-28">{props.question}</div>
-                    <div className="turn" onClick={() => setFrontShow(0)}><img src={ArrowTurn} alt="click to turn the card" /></div>
+                    <div className="turn" onClick={() => setFrontShow(0)} data-identifier="arrow"><img src={ArrowTurn} alt="click to turn the card" /></div>
                 </div>
                 <div className={`side flex flex-column ${frontShow === 1 ? 'back' : 'back-turn'}`}>
                     <div className="flex back-top">
