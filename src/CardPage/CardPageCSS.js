@@ -33,9 +33,6 @@ export default function CardPage(props)
             if(props.number === props.total)
             {
                 props.setAdvancePage(6)
-                setFrontShow(1);
-                setColorScore('');
-                setFirstTime(1);
             }
         }
     }
@@ -44,10 +41,10 @@ export default function CardPage(props)
         <>
         <div className={`cardPage css flex flex-column ${props.card === props.number && props.advancePage === 4 ? '' : 'hidden'}`}>
             <LogoS />
-            <div className="page-title weight-700 size-28">React</div>
-            <div className={`card ${colorScore}`}>
+            <div className="page-title weight-700 size-28">CSS</div>
+            <div className={`card ${colorScore}`} data-identifier="flashcard">
                 <div className={`side flex flex-column ${frontShow === 1 ? 'front' : 'front-turn'}`}>
-                    <div className="number-front weight-400 size-18">{props.number}/{props.total}</div>
+                    <div className="number-front weight-400 size-18" data-identifier="counter">{props.number}/{props.total}</div>
                     <div className="question weight-700 size-28">{props.question}</div>
                     <div className="turn" onClick={() => setFrontShow(0)}><img src={ArrowTurn} alt="click to turn the card" /></div>
                 </div>

@@ -17,10 +17,11 @@ function App(){
     const [card, setCard] = React.useState(1);
     const [forgot, setForgot] = React.useState(0);
     const [advancePage, setAdvancePage] = React.useState(1);
+    const [meta, setMeta] = React.useState(1);
 
     return(
         <>
-            <Landing advancePage={advancePage} setAdvancePage={setAdvancePage} />
+            <Landing advancePage={advancePage} setAdvancePage={setAdvancePage} setMeta={setMeta}/>
 
             {Data.RJS.map(item => <CardPageRJS
             number={item.number}
@@ -90,7 +91,9 @@ function App(){
             forgot={forgot}
             setForgot={setForgot}
             advancePage={advancePage}
-            setAdvancePage={setAdvancePage}/>
+            setAdvancePage={setAdvancePage}
+            meta={meta}
+            />
         </>
     );
 }
